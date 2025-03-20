@@ -1,0 +1,125 @@
+* {
+    font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+*:focus {
+    outline: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #F7F8FC;
+    display: grid;
+    place-items: center;
+}
+
+.component--trialbox {
+    background-color: #fff;
+    box-shadow: 0 28px 30px -12px #E9ECF9;
+    padding: 55px 45px;
+    border-radius: 5px;
+    width: 566px;
+}
+
+.component--trialbox h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #10182F;
+    margin-bottom: 25px;
+}
+
+.component--trialbox p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #10182F;
+    margin-bottom: 40px;
+}
+
+.component--trialbox .creadit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.component--trialbox .creadit .amount {
+    font-size: 26px;
+    font-weight: bold;
+    color: #10182F;
+}
+
+.component--trialbox .creatid text {
+    font-size: 16px;
+    color: #545D7A;
+}
+
+.component--trialbox .creadit .circle-bar {
+    width: 72px;
+    height: 72px;
+    transform: rotate(-90deg);
+    margin-right: 20px;
+}
+
+.component--trialbox .creadit .circle-bar svg {
+    --circum: calc(2* 3.14 * 33.5);
+}
+
+.component--trialbox .creadit .circle-bar svg circle {
+    fill: none;
+    stroke-width: 5;
+    stroke: #DAE1F5;
+    stroke-dasharray: var(--circum);
+    stroke-dashoffset: var(--circum);
+    stroke-linecap: round;
+}
+
+.component--trialbox .creadit .circle-bar svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+}
+
+.component--trialbox .creadit .circle-bar svg circle:nth-child(2) {
+    stroke: #345ACE;
+    animation: 3s animateOffset;
+    animation-fill-mode: forwards;
+}
+
+.component--trialbox .action {
+    display: flex;
+}
+
+.component--trialbox .action a {
+    margin-right: 15px;
+    height: 43px;
+    border: 2px solid #DAE1F5;
+    border-radius: 43px;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #10182F;
+    transition: 300ms all;
+}
+
+.component--trialbox .action a:hover {
+    border-color: #345ACE;
+    color: #345ACE;
+}
+
+.component--trialbox .action .active {
+    background: #10182F;
+    color: #fff;
+    border-color: #10182F;
+}
+
+@keyframes animateOffset {
+    to {
+        stroke-dashoffset: var(--offset);
+    }
+}
