@@ -89,10 +89,6 @@ To use the component in your HTML:
 </div>
 ```
 
-## Demo
-
-![Subscription Credit Component](https://via.placeholder.com/600x300?text=Subscription+Credit+Component)
-
 ## Browser Compatibility
 
 - Chrome (last 3 versions)
